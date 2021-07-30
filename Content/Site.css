@@ -22,3 +22,24 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.navbar {
+    background: #DB5A6B !important;
+    color: #000 !important;
+    border-bottom: 2px solid #763568;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #044F67;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navbar .navbar-nav li a {
+    color: #044F67;
+    font-size: 20px;
+}
+
+.container .jumbotron, .container-fluid .jumbotron {
+    /*margin-top: 32px;*/
+}
