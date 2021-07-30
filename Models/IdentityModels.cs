@@ -29,5 +29,7 @@ namespace MVC_FIRST_PROJECT.Models
         {
             return new ApplicationDbContext();
         }
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Movie> Movies { get; set; }
     }
 }

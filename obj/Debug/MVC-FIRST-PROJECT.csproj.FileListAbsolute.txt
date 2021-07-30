@@ -101,8 +101,9 @@ F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\bin\Microsoft.Owin.Security.Twitter.xml
 F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\bin\Microsoft.Owin.Security.OAuth.xml
 F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC-FIRST-PROJECT.csproj.AssemblyReference.cache
 F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC-FIRST-PROJECT.csproj.CoreCompileInputs.cache
 F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC-FIRST-PROJECT.csproj.CopyComplete
 F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC-FIRST-PROJECT.dll
 F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC-FIRST-PROJECT.pdb
+F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC_FIRST_PROJECT.Migrations.InitialModel.resources
+F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC-FIRST-PROJECT.csproj.GenerateResource.cache
