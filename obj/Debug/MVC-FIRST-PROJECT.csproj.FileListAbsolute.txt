@@ -111,3 +111,4 @@ F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC_FIRST_PROJECT.Migrations.AddIs
 F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC_FIRST_PROJECT.Migrations.AddMemberShipTypeModel.resources
 F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC_FIRST_PROJECT.Migrations.ApplyAnnotations.resources
 F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC-FIRST-PROJECT.csproj.AssemblyReference.cache
+F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC_FIRST_PROJECT.Migrations.BirthDateInCustomerModel.resources

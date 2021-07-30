@@ -24,6 +24,10 @@ namespace MVC_FIRST_PROJECT.Controllers
             return View(customers);
         }
 
+        public ActionResult CreateCustomer()
+        {
+            return View();
+        }
         public ActionResult Details(int id)
         {
             var customer = _context.Customers.SingleOrDefault(c => c.Id == id);

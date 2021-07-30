@@ -15,5 +15,6 @@ namespace MVC_FIRST_PROJECT.Models
         public bool IsSubscribedToNewsLetterCustomer { get; set; }
         public MembershipType MembershipType { get; set; }
         public byte MembershipTypeId { get; set; }
+        public  DateTime? BirthDate { get; set; }
     }
 }

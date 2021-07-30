@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;
+    /*padding-top: 50px;*/
     padding-bottom: 20px;
 }
 
@@ -39,7 +39,6 @@ textarea {
     color: #044F67;
     font-size: 20px;
 }
-
 .container .jumbotron, .container-fluid .jumbotron {
     /*margin-top: 32px;*/
 }
