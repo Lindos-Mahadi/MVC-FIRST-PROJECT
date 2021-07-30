@@ -13,23 +13,23 @@ namespace MVC_FIRST_PROJECT.Controllers
         // GET: Movies
         public ActionResult Index()
         {
-            return View();
+            var movies = GetMovies();
+
+            return View(movies);
         }
         public ActionResult Random()
         {
-            var movie = new Movie() { Name = "lindos" };
-            var customers = new List<Customer>
-            {
-                new Customer { Name = "Customer 1" },
-                new Customer { Name = "Customer 2" }
-            };
+            var movies = GetMovies();
 
-            var viewModel = new RandomMovieViewModel
+            return View(movies);
+        }
+        private object GetMovies()
+        {
+            return new List<Movie>
             {
-                Movie = movie,
-                Customers = customers
+                new Movie { Id = 1, Name = "Shrek" },
+                new Movie { Id = 2, Name = "Wall-e" }
             };
-            return View(viewModel);
         }
     }
 }
