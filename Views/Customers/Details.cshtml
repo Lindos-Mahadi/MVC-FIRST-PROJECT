@@ -19,9 +19,43 @@
             @Html.DisplayFor(model => model.Name)
         </dd>
 
+        <dt>
+            @Html.DisplayNameFor(model => model.BirthDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BirthDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MembershipType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MembershipType.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MembershipType.DiscountRate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MembershipType.DiscountRate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MembershipType.DurationInMonts)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MembershipType.DurationInMonts)
+        </dd>
+
+
     </dl>
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+
