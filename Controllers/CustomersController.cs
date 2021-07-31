@@ -24,10 +24,10 @@ namespace MVC_FIRST_PROJECT.Controllers
             var customers = _context.Customers.Include(c => c.MembershipType).ToList();
             return View(customers);
         }
-        public ActionResult CreateNewCustomer()
-        {
-            return View();
-        }
+        //public ActionResult CreateNewCustomer()
+        //{
+        //    return View();
+        //}
 
         public ActionResult CreateCustomer()
         {
@@ -41,6 +41,7 @@ namespace MVC_FIRST_PROJECT.Controllers
             return View("CreateCustomer", viewModel);
         }
         [HttpPost]
+
         public ActionResult CreateCustomer(Customer customer)
         {
             _context.Customers.Add(customer);
@@ -55,6 +56,53 @@ namespace MVC_FIRST_PROJECT.Controllers
                 return HttpNotFound();
             }
             return View(customer);
+        }
+        [HttpGet]
+        public ActionResult Edit(int id)
+        {
+            var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
+
+            if (customer == null)
+                return HttpNotFound();
+
+            var viewModel = new NewCustomerViewModel
+            {
+                Customer = customer,
+                MembershipTypes = _context.MembershipTypes.ToList()
+            };
+
+            return View(viewModel);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(Customer customer)
+        {
+            //if (!ModelState.IsValid)
+            //{
+            //    var viewModel = new NewCustomerViewModel
+            //    {
+            //        Customer = customer,
+            //        MembershipTypes = _context.MembershipTypes.ToList()
+            //    };
+
+            //    return View("CreateCustomer", viewModel);
+            //}
+
+            if (customer.Id == 0)
+                _context.Customers.Add(customer);
+            else
+            {
+                var customerInDb = _context.Customers.Single(c => c.Id == customer.Id);
+                customerInDb.Name = customer.Name;
+                customerInDb.BirthDate = customer.BirthDate;
+                customerInDb.MembershipTypeId = customer.MembershipTypeId;
+                customerInDb.IsSubscribedToNewsLetterCustomer = customer.IsSubscribedToNewsLetterCustomer;
+            }
+
+            _context.SaveChanges();
+
+            return RedirectToAction("Index", "Customers");
         }
         protected override void Dispose(bool disposing)
         {

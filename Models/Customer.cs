@@ -21,6 +21,7 @@ namespace MVC_FIRST_PROJECT.Models
         public byte MembershipTypeId { get; set; }
 
         [Display(Name = "Date of Birth")]
+        [DataType(DataType.Date)]
         public DateTime? BirthDate { get; set; }
     }
 }
