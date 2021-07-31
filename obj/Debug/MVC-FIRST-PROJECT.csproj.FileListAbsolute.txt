@@ -110,5 +110,8 @@ F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC-FIRST-PROJECT.csproj.GenerateR
 F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC_FIRST_PROJECT.Migrations.AddIsSubscribedToCustomer.resources
 F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC_FIRST_PROJECT.Migrations.AddMemberShipTypeModel.resources
 F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC_FIRST_PROJECT.Migrations.ApplyAnnotations.resources
-F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC-FIRST-PROJECT.csproj.AssemblyReference.cache
 F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC_FIRST_PROJECT.Migrations.BirthDateInCustomerModel.resources
+F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC_FIRST_PROJECT.Migrations.AddNewCustomerViewModel.resources
+F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC_FIRST_PROJECT.Migrations.AddNewCustomerViewModel1.resources
+F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC-FIRST-PROJECT.csproj.AssemblyReference.cache
+F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC_FIRST_PROJECT.Migrations.AddNameMembershipType.resources
