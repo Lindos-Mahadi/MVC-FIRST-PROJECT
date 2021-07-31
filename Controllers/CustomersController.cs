@@ -40,11 +40,13 @@ namespace MVC_FIRST_PROJECT.Controllers
 
             return View("CreateCustomer", viewModel);
         }
-        //[HttpPost]
-        //public ActionResult CreateCustomer(Customer customer)
-        //{
-        //    return View();
-        //}
+        [HttpPost]
+        public ActionResult CreateCustomer(Customer customer)
+        {
+            _context.Customers.Add(customer);
+            _context.SaveChanges();
+            return RedirectToAction("Index", "Customers");
+        }
         public ActionResult Details(int id)
         {
             var customer = _context.Customers.SingleOrDefault(c => c.Id == id);

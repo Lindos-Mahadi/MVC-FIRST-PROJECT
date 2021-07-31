@@ -8,7 +8,7 @@
 
 <h2>CreateCustomer</h2>
 
-@using (Html.BeginForm())
+@using (Html.BeginForm("CreateCustomer", "Customers"))
 {
     @Html.AntiForgeryToken()
 
@@ -35,6 +35,7 @@
         <div class="mb-3 form-check p-0">
             <label class="form-check-label">@Html.CheckBoxFor(m => m.Customer.IsSubscribedToNewsLetterCustomer) Is Subscribed To News Letter Customer ?</label>
         </div>
+
         <div class="form-group">
             @Html.LabelFor(model => model.Customer.MembershipTypeId, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
