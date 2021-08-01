@@ -14,5 +14,9 @@ namespace MVC_FIRST_PROJECT.Models
         public short SignUpFree { get; set; }
         public byte DurationInMonts { get; set; }
         public byte DiscountRate { get; set; }
+
+
+        public static readonly byte Unknown = 0;
+        public static readonly byte PayAsYouGo = 1;
     }
 }
