@@ -22,6 +22,7 @@ namespace MVC_FIRST_PROJECT.Models
 
         [Display(Name = "Date of Birth")]
         [DataType(DataType.Date)]
+        [CustomValidationMin18IfAMember]
         public DateTime? BirthDate { get; set; }
     }
 }
