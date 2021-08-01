@@ -42,6 +42,7 @@ namespace MVC_FIRST_PROJECT.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult CreateCustomer(Customer customer)
         {
             if (!ModelState.IsValid)
