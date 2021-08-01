@@ -40,10 +40,20 @@ namespace MVC_FIRST_PROJECT.Controllers
 
             return View("CreateCustomer", viewModel);
         }
-        [HttpPost]
 
+        [HttpPost]
         public ActionResult CreateCustomer(Customer customer)
         {
+            if (!ModelState.IsValid)
+            {
+                var viewModel = new NewCustomerViewModel
+                {
+                    Customer = customer,
+                    MembershipTypes = _context.MembershipTypes.ToList()
+                };
+
+                return View(viewModel);
+            }
             _context.Customers.Add(customer);
             _context.SaveChanges();
             return RedirectToAction("Index", "Customers");
@@ -78,16 +88,16 @@ namespace MVC_FIRST_PROJECT.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit(Customer customer)
         {
-            //if (!ModelState.IsValid)
-            //{
-            //    var viewModel = new NewCustomerViewModel
-            //    {
-            //        Customer = customer,
-            //        MembershipTypes = _context.MembershipTypes.ToList()
-            //    };
+            if (!ModelState.IsValid)
+            {
+                var viewModel = new NewCustomerViewModel
+                {
+                    Customer = customer,
+                    MembershipTypes = _context.MembershipTypes.ToList()
+                };
 
-            //    return View("CreateCustomer", viewModel);
-            //}
+                return View(viewModel);
+            }
 
             if (customer.Id == 0)
                 _context.Customers.Add(customer);
@@ -103,6 +113,27 @@ namespace MVC_FIRST_PROJECT.Controllers
             _context.SaveChanges();
 
             return RedirectToAction("Index", "Customers");
+        }
+
+        // GET: /ranu/Delete/5  
+        public ActionResult Delete(int id)
+        {
+            return View();
+        }
+
+        // POST: /ranu/Delete/5  
+        [HttpPost]
+        public ActionResult Delete(int id, FormCollection collection)
+        {
+            try
+            {
+                // TODO: Add delete logic here  
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
         }
         protected override void Dispose(bool disposing)
         {

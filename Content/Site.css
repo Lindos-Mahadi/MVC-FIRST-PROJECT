@@ -39,4 +39,13 @@ textarea {
     color: #044F67;
     font-size: 20px;
 }
-
+/*VALIDATION*/
+.field-validation-error{
+    color: red;
+}
+.input-validation-error {
+    color: red;
+}
+.form-control {
+    border: 1px solid red;
+}
