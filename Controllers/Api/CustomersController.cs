@@ -26,6 +26,7 @@ namespace MVC_FIRST_PROJECT.Controllers.Api
         }
 
         // GET /api/customers/1
+        //IHttpActionResult
         public IHttpActionResult GetCustomer(int id)
         {
             var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
@@ -38,6 +39,7 @@ namespace MVC_FIRST_PROJECT.Controllers.Api
 
         // POST /api/customers
         [HttpPost]
+        //IHttpActionResult
         public IHttpActionResult CreateCustomer(CustomerDto customerDto)
         {
             if (!ModelState.IsValid)
