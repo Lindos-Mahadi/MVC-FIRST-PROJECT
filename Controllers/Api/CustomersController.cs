@@ -76,6 +76,7 @@ namespace MVC_FIRST_PROJECT.Controllers.Api
 
             _context.Customers.Remove(customerInDb);
             _context.SaveChanges();
+
         }
     }
 }
