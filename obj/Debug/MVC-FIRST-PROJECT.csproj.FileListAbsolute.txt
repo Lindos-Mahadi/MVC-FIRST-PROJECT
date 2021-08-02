@@ -122,3 +122,5 @@ F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\bin\System.Web.Http.WebHost.dll
 F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\bin\System.Net.Http.Formatting.xml
 F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\bin\System.Web.Http.xml
 F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\bin\System.Web.Http.WebHost.xml
+F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\bin\AutoMapper.dll
+F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\bin\AutoMapper.xml
