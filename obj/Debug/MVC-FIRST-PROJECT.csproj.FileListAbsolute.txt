@@ -113,5 +113,6 @@ F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC_FIRST_PROJECT.Migrations.Apply
 F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC_FIRST_PROJECT.Migrations.BirthDateInCustomerModel.resources
 F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC_FIRST_PROJECT.Migrations.AddNewCustomerViewModel.resources
 F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC_FIRST_PROJECT.Migrations.AddNewCustomerViewModel1.resources
-F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC-FIRST-PROJECT.csproj.AssemblyReference.cache
 F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC_FIRST_PROJECT.Migrations.AddNameMembershipType.resources
+F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC_FIRST_PROJECT.Migrations.TowModelMovieGenre.resources
+F:\MVC-5 PROJECTS\MVC-FIRST-PROJECT\obj\Debug\MVC-FIRST-PROJECT.csproj.AssemblyReference.cache
