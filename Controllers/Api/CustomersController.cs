@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using System.Net.Http;
+using System.Data.Entity;
 using System.Web.Http;
 
 namespace MVC_FIRST_PROJECT.Controllers.Api
@@ -20,21 +20,21 @@ namespace MVC_FIRST_PROJECT.Controllers.Api
         }
 
         // GET /api/customers
-        public IEnumerable<CustomerDto> GetCustomers()
-        {
-            return _context.Customers.ToList().Select(Mapper.Map<Customer, CustomerDto>);
-        }
+        //public IEnumerable<CustomerDto> GetCustomers()
+        //{
+        //    return _context.Customers.ToList().Select(Mapper.Map<Customer, CustomerDto>);
+        //}
 
         // GET /api/customers/1
         //IHttpActionResult
-        public IHttpActionResult GetCustomer(int id)
+        public IHttpActionResult GetCustomer()
         {
-            var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
+            var customerDtos = _context.Customers
+                .Include(c => c.MembershipType)
+                .ToList()
+                .Select(Mapper.Map<Customer, CustomerDto>);
 
-            if (customer == null)
-                return NotFound();
-
-            return Ok(Mapper.Map<Customer, CustomerDto>(customer));
+            return Ok(customerDtos);
         }
 
         // POST /api/customers

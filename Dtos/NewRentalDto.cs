@@ -1,0 +1,10 @@
+﻿using System.Collections.Generic;
+
+namespace MVC_FIRST_PROJECT.Dtos
+{
+    public class NewRentalDto
+    {
+        public int CustomerId { get; set; }
+        public List<int> MovieIds { get; set; }
+    }
+}

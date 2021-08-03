@@ -21,8 +21,8 @@ namespace MVC_FIRST_PROJECT.Controllers
         // GET: Customers
         public ViewResult Index()
         {
-            var customers = _context.Customers.Include(c => c.MembershipType).ToList();
-            return View(customers);
+            //var customers = _context.Customers.Include(c => c.MembershipType).ToList();
+            return View();
         }
         //public ActionResult CreateNewCustomer()
         //{
