@@ -8,7 +8,7 @@ namespace MVC_FIRST_PROJECT.Controllers
 {
     public class RentalsController : Controller
     {
-        public ActionResult New()
+        public ActionResult Index()
         {
             return View();
         }
