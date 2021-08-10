@@ -1,9 +1,8 @@
-﻿
+﻿@model dynamic
+
 @{
     ViewBag.Title = "New Rental Form";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@model dynamic
 
 <h2>New Rental Form</h2>
 
@@ -33,5 +32,26 @@
 @section scripts
 {
     @Scripts.Render("~/bundles/jqueryval")
-}
+    <script>
+        $(document).ready(function () {
 
+            var customers = new Bloodhound({
+                datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
+                queryTokenizer: Bloodhound.tokenizers.whitespace,
+                remote: {
+                    url: '/api/customers?query = %QUERY',
+                    wildcard: '%QUERY'
+                }
+            });
+
+            $('#customer').typeahead({
+                minLength: 3,
+                highlight: true
+            }, {
+                name: 'customers',
+                display: 'name',
+                source: customers
+            });
+        });
+    </script>
+}
